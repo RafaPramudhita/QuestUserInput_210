@@ -42,6 +42,7 @@ fun FormDataDiri(modifier: Modifier) {
     var jenis by remember { mutableStateOf(value = "") }
 
 
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
 
 
 }
