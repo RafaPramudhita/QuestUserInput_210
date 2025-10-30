@@ -1,6 +1,5 @@
 package com.example.inputPengguna
 
-//  rapikan import Compose (runtime/ui/material3/layout)
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -29,22 +28,17 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 
-
 @Composable
 fun FormDataDiri(modifier: Modifier) {
-
     var textNama by remember { mutableStateOf(value = "") }
     var textAlamat by remember { mutableStateOf(value = "") }
     var textJK by remember { mutableStateOf(value = "") }
-
 
     var nama by remember { mutableStateOf(value = "") }
     var alamat by remember { mutableStateOf(value = "") }
     var jenis by remember { mutableStateOf(value = "") }
 
-
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
-
 
     Column(
         modifier = Modifier.padding(top = 50.dp),
@@ -61,7 +55,25 @@ fun FormDataDiri(modifier: Modifier) {
                 textNama = it
             }
         )
-
+        Row {
+            gender.forEach { item ->
+                Row(
+                    modifier = Modifier.selectable(
+                        selected = textJK == item,
+                        onClick = { textJK = item }
+                    ),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    RadioButton(
+                        selected = textJK == item,
+                        onClick = {
+                            textJK = item
+                        }
+                    )
+                    Text(text = item)
+                }
+            }
+        }
 
 
 
