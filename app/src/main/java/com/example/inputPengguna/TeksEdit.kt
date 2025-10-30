@@ -94,7 +94,18 @@ fun FormDataDiri(modifier: Modifier) {
             color = Color.DarkGray
         )
 
-
+        Button(
+            modifier = Modifier.fillMaxWidth(1f),
+            // the button is enable when the user makes a selection
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
+            }
+        ) {
+            Text(text = stringResource(R.string.submit))
+        }
 
 
 
