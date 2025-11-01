@@ -169,7 +169,22 @@ fun FormDataDiri(modifier: Modifier) {
             }
         }
 
-
+        ElevatedCard(
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+                .fillMaxWidth(),
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.Black)
+        ) {
+            Column(
+                Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                Text("Nama   : " + nama, color = Color.White)
+                Text("Gender : " + jenis, color = Color.White)
+                Text("Status : " + status, color = Color.White)
+                Text("Alamat : " + alamat, color = Color.White)
+            }
+        }
 
     }
 }
