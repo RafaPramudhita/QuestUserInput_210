@@ -146,7 +146,7 @@ fun FormDataDiri(modifier: Modifier) {
                     placeholder = { Text("Alamat") }
                 )
 
-
+                Spacer(Modifier.height(6.dp))
 
 
             }
