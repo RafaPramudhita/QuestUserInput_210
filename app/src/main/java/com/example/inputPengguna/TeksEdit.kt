@@ -51,7 +51,16 @@ fun FormDataDiri(modifier: Modifier) {
             )
         }
 
+        ElevatedCard(
+            modifier = Modifier
+                .padding(16.dp)
+                .fillMaxWidth(),
+            shape = MaterialTheme.shapes.large,
+            colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+            elevation = CardDefaults.cardElevation(defaultElevation = 6.dp)
+        ) {
 
+        }
 
 
 
