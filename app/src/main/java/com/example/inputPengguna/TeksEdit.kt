@@ -37,7 +37,19 @@ fun FormDataDiri(modifier: Modifier) {
             .imePadding()
             .verticalScroll(scroll)
     ) {
-
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(color = Color.Magenta)
+                .padding(horizontal = 16.dp, vertical = 20.dp)
+        ) {
+            Text(
+                text = "Formulir Pendaftaran",
+                style = MaterialTheme.typography.titleLarge,
+                color = Color.White,
+                fontWeight = FontWeight.SemiBold
+            )
+        }
 
 
 
