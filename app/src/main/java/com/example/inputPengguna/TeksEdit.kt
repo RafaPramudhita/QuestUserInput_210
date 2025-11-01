@@ -185,6 +185,6 @@ fun FormDataDiri(modifier: Modifier) {
                 Text("Alamat : " + alamat, color = Color.White)
             }
         }
-
+        Spacer(Modifier.height(16.dp))
     }
 }
