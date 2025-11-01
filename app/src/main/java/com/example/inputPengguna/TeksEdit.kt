@@ -27,6 +27,7 @@ fun FormDataDiri(modifier: Modifier) {
 
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
     val statusOpt: List<String> = listOf("Janda", "Lajang", "Duda")
+    val scroll = rememberScrollState()
 
 
 }
