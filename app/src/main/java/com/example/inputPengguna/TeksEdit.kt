@@ -133,7 +133,18 @@ fun FormDataDiri(modifier: Modifier) {
                     }
                 }
 
-
+                Text(
+                    text = "ALAMAT",
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.SemiBold
+                )
+                OutlinedTextField(
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth(),
+                    placeholder = { Text("Alamat") }
+                )
 
 
 
