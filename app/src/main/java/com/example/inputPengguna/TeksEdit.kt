@@ -59,7 +59,24 @@ fun FormDataDiri(modifier: Modifier) {
             colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
             elevation = CardDefaults.cardElevation(defaultElevation = 6.dp)
         ) {
+            Column(
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(14.dp)
+            ) {
 
+
+
+
+
+
+
+
+
+
+
+            }
         }
 
 
