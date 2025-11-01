@@ -148,7 +148,24 @@ fun FormDataDiri(modifier: Modifier) {
 
                 Spacer(Modifier.height(6.dp))
 
-
+                Button(
+                    onClick = {
+                        nama = textNama
+                        jenis = textJK
+                        status = textStatus
+                        alamat = textAlamat
+                    },
+                    enabled = textNama.isNotBlank() &&
+                            textJK.isNotBlank() &&
+                            textStatus.isNotBlank() &&
+                            textAlamat.isNotBlank(),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(48.dp),
+                    shape = MaterialTheme.shapes.extraLarge
+                ) {
+                    Text("Submit")
+                }
             }
         }
 
