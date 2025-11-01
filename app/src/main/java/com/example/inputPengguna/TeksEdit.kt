@@ -29,5 +29,19 @@ fun FormDataDiri(modifier: Modifier) {
     val statusOpt: List<String> = listOf("Janda", "Lajang", "Duda")
     val scroll = rememberScrollState()
 
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .statusBarsPadding()
+            .navigationBarsPadding()
+            .imePadding()
+            .verticalScroll(scroll)
+    ) {
 
+
+
+
+
+
+    }
 }
