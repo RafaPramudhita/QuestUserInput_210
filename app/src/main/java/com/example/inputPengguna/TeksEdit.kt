@@ -79,7 +79,32 @@ fun FormDataDiri(modifier: Modifier) {
                     placeholder = { Text("Isian nama lengkap") }
                 )
 
-
+                Text(
+                    text = "JENIS KELAMIN",
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    gender.forEach { item ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .selectable(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                .padding(vertical = 2.dp)
+                        ) {
+                            RadioButton(
+                                selected = textJK == item,
+                                onClick = { textJK = item }
+                            )
+                            Spacer(Modifier.width(8.dp))
+                            Text(text = item)
+                        }
+                    }
+                }
 
 
 
