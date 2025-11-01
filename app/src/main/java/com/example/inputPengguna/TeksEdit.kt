@@ -65,7 +65,19 @@ fun FormDataDiri(modifier: Modifier) {
                     .fillMaxWidth(),
                 verticalArrangement = Arrangement.spacedBy(14.dp)
             ) {
-
+                Text(
+                    text = "NAMA LENGKAP",
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.SemiBold
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    onValueChange = { textNama = it },
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large,
+                    modifier = Modifier.fillMaxWidth(),
+                    placeholder = { Text("Isian nama lengkap") }
+                )
 
 
 
